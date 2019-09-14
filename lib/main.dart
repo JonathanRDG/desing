@@ -1,4 +1,5 @@
 import 'package:design/src/pages/basic_page.dart';
+import 'package:design/src/pages/bottom_page.dart';
 import 'package:design/src/pages/scroll_page.dart';
 import 'package:flutter/material.dart';
 
@@ -10,10 +11,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Diseños',
-      initialRoute: 'basic',
+      initialRoute: 'scroll',
       routes:{
-        'basic' : (BuildContext context) => BasicPage(),
-        'scroll' : (BuildContext context)=> ScrollPage()
+        'basic'       : (BuildContext context)  =>  BasicPage(),
+        'scroll'      : (BuildContext context)  =>  ScrollPage(),
+        'botons'      : (BuildContext context)  =>  BottomPage()
       }
-    );}
+    );
+
+  }
+
 }
